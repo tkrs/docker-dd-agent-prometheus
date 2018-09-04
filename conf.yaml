@@ -1,7 +1,7 @@
 instances:
   # The prometheus endpoint to query from
-  - prometheus_url: http://%%host%%:%%env_PROMETHEUS_PORT%%/
-    namespace: %%env_NAMESPACE%%
+  - prometheus_url: http://localhost:8090/
+    namespace: default
     metrics:
       - jvm*
       - java*
