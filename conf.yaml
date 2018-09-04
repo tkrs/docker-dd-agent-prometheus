@@ -1,0 +1,10 @@
+instances:
+  # The prometheus endpoint to query from
+  - prometheus_url: http://localhost:8090/
+    namespace: "batch"
+    metrics:
+      - jvm*
+      - java*
+      - process*
+    tags:
+      - app: germain
