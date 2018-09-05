@@ -3,4 +3,6 @@ instances:
   - prometheus_url: http://localhost:8090/
     namespace: default
     metrics:
-      - "*"
+      - jvm*
+      - java*
+      - process*
